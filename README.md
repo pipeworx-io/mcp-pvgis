@@ -1,15 +1,20 @@
-# mcp-pvgis
+# @pipeworx/pvgis
 
-PVGIS MCP — EU Joint Research Centre PV system modeler
+PVGIS MCP — EU JRC Photovoltaic Geographical Information System. Models PV system output for any location. No auth.
 
-Part of [Pipeworx](https://pipeworx.io) — an MCP gateway connecting AI agents to 673+ live data sources.
+Part of [Pipeworx](https://pipeworx.io) — an MCP gateway connecting AI agents to 1394+ live data sources.
 
 ## Tools
 
-| Tool | Description |
-|------|-------------|
-| `monthly_radiation` | Long-term monthly average global / diffuse / direct irradiation on horizontal / inclined plane. |
-| `tmy` | Typical Meteorological Year — hourly synthetic year representative of the climate. |
+- `pv_performance(latitude, longitude, peakpower, ...)` — annual / monthly PV yield estimates
+- `tmy(latitude, longitude, year_min?, year_max?)` — typical meteorological year (hourly)
+- `monthly_radiation(latitude, longitude, ...)` — long-term monthly irradiation
+
+## Data source
+
+`https://re.jrc.ec.europa.eu/api/v5_3/` — public, no auth.
+
+Coverage: global, but most accurate for Europe / Africa / Asia (uses PVGIS-SARAH3, PVGIS-NSRDB, PVGIS-ERA5).
 
 ## Quick Start
 
@@ -25,7 +30,7 @@ Add to your MCP client (Claude Desktop, Cursor, Windsurf, etc.):
 }
 ```
 
-Or connect to the full Pipeworx gateway for access to all 673+ data sources:
+Or connect to the full Pipeworx gateway for access to all 1394+ data sources:
 
 ```json
 {
@@ -49,7 +54,7 @@ The gateway picks the right tool and fills the arguments automatically.
 
 ## More
 
-- [All tools and guides](https://github.com/pipeworx-io/examples)
+- [Docs and guides](https://pipeworx.io/docs)
 - [pipeworx.io](https://pipeworx.io)
 
 ## License
