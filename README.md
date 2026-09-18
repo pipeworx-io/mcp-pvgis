@@ -83,3 +83,13 @@ The gateway picks the right tool and fills the arguments automatically.
 ## License
 
 MIT
+
+## No MCP client? Call it over HTTP
+
+```bash
+curl -X POST https://gateway.pipeworx.io/v1/tools/pv_performance \
+  -H 'Content-Type: application/json' \
+  -d '{"latitude":40.7128,"longitude":-74.006,"peakpower":5,"loss":14,"angle":35,"aspect":0,"pvtechchoice":"crystSi"}'
+```
+
+No account needed for the first calls. Inspect any tool: `GET https://gateway.pipeworx.io/v1/tools/pv_performance`. Find one: `POST https://gateway.pipeworx.io/v1/tools/search_packs` with `{"query":"..."}`.
