@@ -1,6 +1,6 @@
 {
   "name": "@pipeworx/mcp-pvgis",
-  "version": "0.1.1",
+  "version": "0.1.2",
   "description": "PVGIS MCP — EU Joint Research Centre PV system modeler",
   "type": "module",
   "main": "src/index.ts",
@@ -26,7 +26,7 @@
     "@cloudflare/workers-types": "^4.20260405.1"
   },
   "pipeworx": {
-    "sourceHash": "v1-3ca5fc10f428b1922d4d8f5d981b39ade186f9b274a74432c653f3fb3a802621",
-    "sourceCommit": "00c836ddeaecbdd581dcfb0fb1842efea104006e"
+    "sourceHash": "v1-f96a110b6245bc969a1848daf5481faffd0b7bfb239a985370aa5397895eea92",
+    "sourceCommit": "4d51421bd010ad9a322c2245b70b401604912eff"
   }
 }
