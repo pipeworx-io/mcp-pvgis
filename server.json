@@ -3,7 +3,7 @@
   "name": "io.github.pipeworx-io/pvgis",
   "title": "Pvgis",
   "description": "PVGIS MCP — EU Joint Research Centre PV system modeler",
-  "version": "0.1.2",
+  "version": "0.2.0",
   "websiteUrl": "https://pipeworx.io/packs/pvgis",
   "repository": {
     "url": "https://github.com/pipeworx-io/mcp-pvgis",

@@ -1,0 +1,111 @@
+[
+  {
+    "name": "pv_performance",
+    "description": "Model annual + monthly PV system output. Returns kWh/year estimates and monthly breakdowns.",
+    "inputSchema": {
+      "type": "object",
+      "properties": {
+        "latitude": {
+          "type": "number",
+          "description": "Latitude in degrees"
+        },
+        "longitude": {
+          "type": "number",
+          "description": "Longitude in degrees"
+        },
+        "peakpower": {
+          "type": "number",
+          "description": "Nominal peak power (kWp). Default 1."
+        },
+        "loss": {
+          "type": "number",
+          "description": "System losses (%) — default 14"
+        },
+        "mountingplace": {
+          "type": "string",
+          "description": "free | building (BIPV). Default free."
+        },
+        "angle": {
+          "type": "number",
+          "description": "Tilt angle in degrees from horizontal. Default 35."
+        },
+        "aspect": {
+          "type": "number",
+          "description": "Azimuth: 0=south, 90=west, -90=east, 180=north. Default 0."
+        },
+        "pvtechchoice": {
+          "type": "string",
+          "description": "crystSi | CIS | CdTe | Unknown. Default crystSi."
+        }
+      },
+      "required": [
+        "latitude",
+        "longitude"
+      ]
+    }
+  },
+  {
+    "name": "monthly_radiation",
+    "description": "Long-term monthly average global / diffuse / direct irradiation on horizontal / inclined plane.",
+    "inputSchema": {
+      "type": "object",
+      "properties": {
+        "latitude": {
+          "type": "number"
+        },
+        "longitude": {
+          "type": "number"
+        },
+        "horirrad": {
+          "type": "boolean",
+          "description": "Include horizontal irradiation (default true)"
+        },
+        "optrad": {
+          "type": "boolean",
+          "description": "Include optimum-angle irradiation (default true)"
+        },
+        "startyear": {
+          "type": "number",
+          "description": "Earliest year, defaults to climate database start"
+        },
+        "endyear": {
+          "type": "number",
+          "description": "Latest year"
+        },
+        "angle": {
+          "type": "number",
+          "description": "Specific tilt angle (default optimum)"
+        }
+      },
+      "required": [
+        "latitude",
+        "longitude"
+      ]
+    }
+  },
+  {
+    "name": "tmy",
+    "description": "Typical Meteorological Year — hourly synthetic year representative of the climate.",
+    "inputSchema": {
+      "type": "object",
+      "properties": {
+        "latitude": {
+          "type": "number"
+        },
+        "longitude": {
+          "type": "number"
+        },
+        "startyear": {
+          "type": "number"
+        },
+        "endyear": {
+          "type": "number"
+        }
+      },
+      "required": [
+        "latitude",
+        "longitude"
+      ]
+    }
+  }
+]
