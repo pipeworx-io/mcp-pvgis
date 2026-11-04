@@ -1,6 +1,6 @@
 {
   "name": "@pipeworx/mcp-pvgis",
-  "version": "0.2.0",
+  "version": "0.2.1",
   "description": "PVGIS MCP — EU Joint Research Centre PV system modeler",
   "type": "module",
   "main": "lib/index.js",
@@ -27,7 +27,7 @@
     "mode": "gateway",
     "slug": "pvgis",
     "gatewaySlug": "pvgis",
-    "sourceHash": "v1-842d9cb054908c1d7e8872dde59d3badb1150d25e8a0b877e1c1d6c4e42ff804",
-    "sourceCommit": "6bae4cfa7b6a73bbe014dc8820a19c80c842b21e"
+    "sourceHash": "v1-0d2190c5492cd237c1bd68684d9ae346e1e0deeb1663b76c99b224b8a4bba33a",
+    "sourceCommit": "db27387ed3ef7ec4805d465f7964a7f65f937006"
   }
 }
